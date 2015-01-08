@@ -1,0 +1,30 @@
+{
+  "name": "uniql-js",
+  "version": "0.0.1",
+  "description": "Produces Javascript from UniQL ASTs.",
+  "main": "src/compiler.js",
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/honeinc/uniql-js.git"
+  },
+  "keywords": [
+    "uniql",
+    "javascript",
+    "query",
+    "ast",
+    "dsl"
+  ],
+  "author": "Andy Burke <aburke@bitflood.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/honeinc/uniql-js/issues"
+  },
+  "devDependencies": {
+    "mocha": "~2.0.1"
+  },
+  "dependencies": {
+  }
+}
