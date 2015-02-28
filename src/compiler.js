@@ -9,6 +9,21 @@ var generators = {
     "STRING": function( node ) {
         return '"' + node.arguments[ 0 ].replace( '"', '\\"' ) + '"';
     },
+    "BOOLEAN": function( node ) {
+        return node.arguments[ 0 ].toLowerCase() === 'true';
+    },
+    "PRIMITIVE": function( node ) {
+        var value = node.arguments[ 0 ];
+        switch ( value.toLowerCase() ) {
+            case 'null':
+                value = null;
+                break;
+            case 'undefined':
+                value = undefined;
+                break;
+        }
+        return value;
+    },
     "SYMBOL": function( node ) {
         return '' + node.arguments[ 0 ];
     },
